@@ -1,0 +1,199 @@
+/*Reset*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-size: 10px;
+  font-weight: 500;
+  color: #252B42;
+  font-family: Montserrat;
+  scroll-behavior: smooth;
+  outline: none;
+  background-color: #c75a5a !important;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.header {
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+.header__container h1 {
+  font-size: 5rem;
+  color: #fff;
+  font-family: "Arial Black";
+  text-align: center;
+}
+@media (max-width: 850px) {
+  .header__container h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.form-section {
+  padding-top: 50px;
+}
+.form-section__container .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  height: auto;
+  background-color: #ffffff;
+  margin: 0 auto;
+  border-radius: 25px;
+  padding: 25px 0;
+  position: relative;
+}
+@media (max-width: 850px) {
+  .form-section__container .form {
+    width: 100%;
+  }
+}
+.form-section__container .form::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: -55px;
+  width: 20px;
+  height: 150px;
+  background-color: #ffffff;
+  border-radius: 25px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 350px) {
+  .form-section__container .form::after {
+    left: 5px;
+  }
+}
+.form-section__container .form::before {
+  content: "";
+  position: absolute;
+  left: 150px;
+  bottom: -95px;
+  width: 20px;
+  height: 150px;
+  background-color: #ffffff;
+  border-radius: 25px;
+}
+.form-section__container .form h2 {
+  font-size: 2.5rem;
+  font-family: "Arial Black";
+  margin-bottom: 15px;
+  text-align: center;
+}
+.form-section__container .form .form-input {
+  width: 80%;
+  height: 55px;
+  margin-bottom: 15px;
+  background-color: #d1d1d1;
+  border-radius: 25px;
+  font-size: 2.5rem;
+  padding-left: 15px;
+  border: 3px solid transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 850px) {
+  .form-section__container .form .form-input::-webkit-input-placeholder {
+    font-size: 1.5rem;
+  }
+  .form-section__container .form .form-input::-moz-placeholder {
+    font-size: 1.5rem;
+  }
+  .form-section__container .form .form-input:-ms-input-placeholder {
+    font-size: 1.5rem;
+  }
+  .form-section__container .form .form-input::-ms-input-placeholder {
+    font-size: 1.5rem;
+  }
+  .form-section__container .form .form-input::placeholder {
+    font-size: 1.5rem;
+  }
+}
+.form-section__container .form .form-input:valid {
+  -webkit-box-shadow: #00ff07 1px 1px 10px 1px;
+          box-shadow: #00ff07 1px 1px 10px 1px;
+}
+.form-section__container .form .form-input:invalid {
+  -webkit-box-shadow: rgb(255, 0, 0) 1px 1px 10px 1px;
+          box-shadow: rgb(255, 0, 0) 1px 1px 10px 1px;
+}
+.form-section__container .form textarea {
+  height: 150px !important;
+  resize: none;
+  padding-top: 15px;
+}
+.form-section__container .form .form-button {
+  width: 80%;
+  height: 50px;
+  background-color: green;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 2rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  z-index: 5;
+}
+.form-section__container .form .form-button:hover {
+  background-color: #115311;
+}
+.form-section__container .form .bubble {
+  position: absolute;
+  right: -9px;
+  top: -9px;
+  background-color: #c75a5a;
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+}
